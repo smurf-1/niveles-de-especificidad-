@@ -8,19 +8,78 @@
   </head>
   <body>
    <style>
+     *{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+     }
      body{
       background-color: rgb(137, 188, 223);
      }
+     h1{
+      color: yellow;
+     }
+     h2{
+      color: blue;
+     }
+     h3{
+      color: red;
+     }
+     .caja1{
+      background-color: black;
+      font-size: 72px;
+     }
+     #caja2{
+      background-color: blue;
+      color: rgb(202, 160, 20) !important;
+     }
+     
+
+     #miElemento {
+    color: blue;
+    font-size: 20px;
+     }
+
+
+    .miClase {
+    color: red;
+    font-weight: bold;
+    }
+
+
+    #miElemento.miClase {
+        color: green;
+           font-style: italic;
+    }
+     
    </style>
     <header></header>
     <main>
-      <section>
-        <article> <img  class="z-n1 position-absolute" src="img/fondo.png" alt="" width="80%"></article>
-        <article> <img  class="z-1 position-absolute" src="img/ave.png" alt="" width="20%"></article>
-        <article> <img  class="z-2 position-absolute" src="img/ave2.png" alt="" width="20%" style="left: 20%; top: 30%;"></article>
+      <div class="container-fluid">
+        <div class="row">
+      <section class="col-12">
+        <article class="col-12"> <img  class="z-n1 position-absolute" src="img/fondo.png" alt="" width="80%"></article>
+        <article class="col-12"> <img  class="z-1 position-absolute" src="img/ave.png" alt="" width="20%" style="left: 25%; top: 35%;"></article>
+        <article class="col-12"> <img  class="z-2 position-absolute" src="img/ave2.png" alt="" width="20%" style="left: 40%; top: 50%;"></article>
       </section>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>primero</h1>
+          <h2>segundo</h2>
+          <h3>tercero</h3>
+        </div>
+     <div class="caja1 col-4">
+      <p>soy caja 1</p>
+     </div>
+     <div id="caja2">
+      <h2 id="caja2">soy caja 2</h2>
+     </div>
+     <div id="miElemento" class="miClase">Texto de ejemplo</div>
+  
     </main>
-    <footer></footer>
+    <footer>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
